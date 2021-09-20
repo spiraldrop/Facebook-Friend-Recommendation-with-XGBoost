@@ -3,7 +3,7 @@
 ## About this project
 This assignment uses singular value decomposition (SVD) with XGBoost to recommend Facebook friends. Most of the feature engineering has been included in the FB_featurization file, but we add two additional features and run the model to examine whether the new features add any substantial weight, which can be seen in the FB_all_features file.  In the FB_all_features file, we supplement features based on Preferential attachment[http://www.cs.cornell.edu/home/kleinber/link-pred.pdf] for followers and followees as well as [Supervised link features](https://ieeexplore.ieee.org/abstract/document/6033365) called ```svd_dot```. We then determine the best parameters to run our XGBoost model including learning rate and maximum tree depth using ```RandomizedSearchCV```. As a performance metric, we use the confusion matrix and later on find the feature importances. 
 
-## Link to the files 
+## Link to the data 
 https://drive.google.com/drive/folders/1c50Q5RcmdpMYj1jCPc3ShOE2y4G8G2ez
 
 ## Libraries needed
